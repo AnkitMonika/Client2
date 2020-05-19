@@ -8,7 +8,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import { setContext } from "apollo-link-context";
 
 const httpLink = createHttpLink({
-  uri: 'http://ec2-3-90-53-66.compute-1.amazonaws.com/'
+  uri: 'http://localhost:4000/graphql'
 })
 
 const authLink = setContext(() => {
